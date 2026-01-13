@@ -12,12 +12,12 @@ export const routes: Routes = [
   },
   {
     path:'Blog',
-    component: MainAboutMe,
+    component: MainBlog,
     title: 'My blog'
   },
   {
     path:'About me',
-    component: MainBlog,
+    component: MainAboutMe,
     title: 'My info'
   },
   {

@@ -3,9 +3,9 @@
     <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
       <div class="lg:pt-4 lg:pr-8">
         <div class="lg:max-w-lg">
-          <h2 class="text-base/7 font-semibold text-indigo-400">Sofware Engineer</h2>
+          <h2 class="text-base/7 font-semibold text-indigo-400">{{positionDeveloper}}</h2>
           <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">Hiram Hernandez</p>
-          <p class="mt-6 text-lg/8 text-gray-300">I'm a software developer about 2.5+ years of expirence at retail store. I've been working in diffents process related with the creating of loans and credits systems.</p>
+          <p class="mt-6 text-lg/8 text-gray-300">{{developerDescription}}</p>
 
           <dl class="mt-10 max-w-xl space-y-8 text-base/7 text-gray-400 lg:max-w-none">
             <div class="relative pl-9"> 
@@ -16,7 +16,7 @@
                 FrontEnd.
               </dt>
               <dd class="inline">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                {{frontEndDescription}}
               </dd>
             </div>
 
@@ -27,7 +27,9 @@
                 </svg>
                 Backend
               </dt>
-              <dd class="inline">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
+              <dd class="inline">
+                {{backEndDescription}}
+              </dd>
             </div>
 
             <div class="relative pl-9">
@@ -38,7 +40,9 @@
                 </svg>
                 Databases
               </dt>
-              <dd class="inline">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
+              <dd class="inline">
+                {{dataBaseDescription}}
+              </dd>
             </div>
           </dl>
 
