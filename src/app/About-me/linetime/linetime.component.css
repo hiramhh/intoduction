@@ -1,0 +1,75 @@
+/* Centramos el div en el puro centro de la pantalla */
+.pantalla-completa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ocupa todo el alto de la ventana */
+    background-color: #f0f0f0;
+    flex-direction: column;
+}
+
+/* El Div Principal con Grid */
+.contenedor-grid {
+    display: grid;
+    /* Definimos dos columnas: la primera de 1 parte y la segunda de 3 partes */
+    grid-template-columns: 1fr 3fr; 
+    
+    /* O si prefieres medidas fijas/porcentajes: */
+    /* grid-template-columns: 200px 1fr; */
+    align-items: stretch; /* ESTO ES CLAVE: estira ambas columnas al mismo alto */
+    width: 90%;
+    max-width: 1000px;
+    gap: 20px; /* Espacio entre las columnas */
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Estilos visuales para ver las columnas */
+.columna-izquierda {
+    background-color: #e8f4fd;
+    padding: 20px;
+    border: 2px dashed #3498db;
+}
+
+.line-container{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1; /* Esto hace que el contenedor ocupe todo el alto restante del GRID */
+    width: 100%;
+}
+
+.columna-izquierda-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el logo y la línea horizontalmente */
+}
+
+.logo-placeholder {
+    background-color: #e8f4fd;
+    padding: 10px;
+    border: 2px dashed #3498db;
+    width: 100%;
+    text-align: center;
+}
+
+.line{
+    background-color: rgb(137, 38, 202);
+    width: 4px; /* Grosor de la línea */
+    height: 100%; /* Ahora sí abarca todo el alto del padre (line-container) */
+    border-radius: 2px;
+}
+
+.columna-derecha {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 2px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+.date{
+    color: #b7b8b9;
+    font-weight: 200;
+    font-size: 12px;
+}

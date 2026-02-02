@@ -1,0 +1,109 @@
+:root {
+  --accent-color: #2ecc71; /* El verde de tu imagen */
+  --text-main: #2c3e50;
+  --text-light: #7f8c8d;
+  --bg-grid: #f4f7f9;
+}
+
+body {
+  background-color: var(--bg-grid);
+  /* Efecto de cuadrícula de fondo */
+  background-image: radial-gradient(#d1d9e0 1px, transparent 1px);
+  background-size: 20px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.career-timeline {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.title {
+  text-align: center;
+  color: #1a2a3a;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.timeline-container {
+  position: relative;
+  padding-left: 40px; /* Espacio para la línea */
+}
+
+/* La línea verde continua */
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  left: 65px; /* Alineada con el centro de los logos */
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+/* La caja blanca del logo */
+.logo-box {
+  min-width: 55px;
+  height: 55px;
+  background: white;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  z-index: 2; /* Para que esté sobre la línea */
+}
+
+.logo-box img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+/* La tarjeta de contenido */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  flex-grow: 1;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--text-main);
+}
+
+.company {
+  color: var(--accent-color);
+  filter: brightness(0.9);
+}
+
+.date {
+  display: block;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin: 8px 0 15px 0;
+}
+
+.card p {
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+
+
